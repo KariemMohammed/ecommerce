@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+.row{
+    @apply flex justify-center items-center flex-wrap
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+input:checked ~ .dot {
+        transform: translateX(100%);
+        /* background-color: #132b50; */
+        }
+
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* sm ≥576px */
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+/* md ≥768px */
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+/* lg ≥992px */
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+/* xl ≥1200px */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+/* 2xl ≥1400px */
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+}
+
+
+.slick-next:before, .slick-prev:after {
+  content: '' !important ;
+  visibility: hidden  !important ; 
+}
+
